@@ -11,7 +11,7 @@ import {
 } from "./components";
 import { styles } from "./style";
 import { Analytics } from '@vercel/analytics/react';
-
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const App = () => {
 
@@ -31,6 +31,7 @@ const App = () => {
           <StarsCanvas />
         </div>
         <Analytics /> 
+        <SpeedInsights />
       </div>
     </BrowserRouter>
   );
