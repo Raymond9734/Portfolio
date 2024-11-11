@@ -12,10 +12,9 @@ import {
 import { styles } from "./style";
 import { Analytics } from '@vercel/analytics/react';
 
-
 const App = () => {
 
-  return (
+ return (
     <BrowserRouter>
       <div className="relative z-0">
         <div className={`bg-[${styles.bgColor}] bg-cover bg-no-repeat bg-center`}>
@@ -30,7 +29,7 @@ const App = () => {
           <Contact />
           <StarsCanvas />
         </div>
-        <Analytics /> 
+        <Analytics /> {/* Add Analytics here */}
       </div>
     </BrowserRouter>
   );
