@@ -51,10 +51,9 @@ The built files will be in the `dist` directory.
 
 ## License
 
-[Include your chosen license here]
 
 ## Contact
 
 [Raymond Madara](rymadara97@gmail.com)
 
-Project Link: [Click Here](https://github.com/Raymond9734/Portfolio)
+Project Link: [Click Here](https://raymond97.vercel.app/)
