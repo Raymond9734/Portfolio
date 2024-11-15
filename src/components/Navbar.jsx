@@ -87,7 +87,7 @@ const Navbar = () => {
             {isMenuOpen && (
               <div 
                 ref={mobileMenuRef}
-                className="fixed left-0 right-0 backdrop-blur-md p-4 sm:hidden z-[9999] shadow-lg rounded-b-lg overflow-hidden"
+                className="fixed left-0 right-0 top-20 backdrop-blur-md p-4 sm:hidden z-[9999] shadow-lg rounded-b-lg overflow-hidden"
                 style={{
                   backgroundColor: `${styles.darkBgColor}80`,
                   maxHeight: isMenuOpen ? '1000px' : '0',
