@@ -13,7 +13,7 @@ const Stars = (props) => {
     for (let i = 0; i < positions.length; i++) {
       if (isNaN(positions[i])) {
         console.warn(`Found NaN at index ${i} in star positions`)
-        positions[i] = 0 // or use Math.random() - 0.5 for a random value between -0.5 and 0.5
+        positions[i] = 0 
       }
     }
     

@@ -3,77 +3,6 @@ import { technologies } from '../constants'
 import { SectionWrapper } from '../hoc'
 import { styles } from '../style'
 
-const Tech = () => {
-  const iconsPerPill = 4;
-  const totalPills = Math.ceil(technologies.length / iconsPerPill);
-
-  const pillColors = ["#4ADE80", "#FDE047", "#60A5FA", "#F472B6"];
-  const pillsData = [];
-
-  for (let i = 0; i < totalPills; i++) {
-    pillsData.push({
-      color: pillColors[i % pillColors.length],
-      rotation: 15
-    });
-  }
-
-  const [isMobile, setIsMobile] = React.useState(window.innerWidth <= 768);
-
-  React.useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  const displayedPills = isMobile ? pillsData.slice(0, 3) : pillsData;
-
-  return (
-    <div className='flex flex-col lg:flex-row justify-center items-center'>
-      <div className='w-full lg:w-1/3 pr-0 lg:pr-8 mb-8 lg:mb-0'>
-        <p className={styles.sectionSubText}>My Stack</p>
-        <h2 className={styles.sectionHeadText}>Tech Stack</h2>
-        <div className={`${styles.sectionSubText} mt-4`}>
-          <div className="flex flex-wrap">
-            {technologies.map((tech, index) => (
-              <span
-                key={tech.name}
-                className="inline-block mb-2 mr-2"
-                style={{
-                  color: `#${Math.floor(Math.random()*16777215).toString(16)}`,
-                }}
-              >
-                #{tech.name}
-              </span>
-            ))}
-          </div>
-        </div>
-      </div>
-      <div className='w-full lg:w-2/3 flex flex-wrap justify-center gap-7'>
-        {displayedPills.map((pill, index) => (
-          <NavigationPill
-            key={index}
-            color={pill.color}
-            technologies={technologies.slice(index * iconsPerPill, (index + 1) * iconsPerPill)}
-            label={pill.label}
-            rotation={pill.rotation}
-          />
-        ))}
-      </div>
-    </div>
-  )
-}
-
-const Logo = ({ icon, className = "" }) => {
-  return (
-    <div className={`w-12 h-12 rounded-full bg-black flex items-center justify-center ${className}`}>
-      <img src={icon} alt="technology icon" className='w-8 h-8 object-contain' />
-    </div>
-  );
-};
-
 const NavigationPill = ({
   color,
   technologies = [],
@@ -85,7 +14,7 @@ const NavigationPill = ({
 
   React.useEffect(() => {
     const handleScroll = () => {
-      const position = window.pageYOffset;
+      const position = window.scrollY;
       setScrollPosition(position);
     };
 
@@ -151,4 +80,71 @@ const NavigationPill = ({
     </div>
   );
 };
+
+const Tech = () => {
+  const iconsPerPill = 4;
+  const totalPills = Math.ceil(technologies.length / iconsPerPill);
+
+  const pillColors = ["#4ADE80", "#FDE047", "#60A5FA", "#F472B6"];
+  const pillsData = [];
+
+  for (let i = 0; i < totalPills; i++) {
+    pillsData.push({
+      color: pillColors[i % pillColors.length],
+      rotation: 15
+    });
+  }
+
+  const [isMobile, setIsMobile] = React.useState(window.innerWidth <= 768);
+
+  React.useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const displayedPills = isMobile ? pillsData.slice(0, 3) : pillsData;
+
+  return (
+    <div className='flex flex-col lg:flex-row justify-center items-center'>
+      <div className='w-full lg:w-1/3 pr-0 lg:pr-8 mb-8 lg:mb-0'>
+        <p className={styles.sectionSubText}>My Stack</p>
+        <h2 className={styles.sectionHeadText}>Tech Stack</h2>
+        <div className={`${styles.sectionSubText} mt-4`}>
+          <div className="flex flex-wrap">
+            {technologies.map((tech, index) => (
+              <span
+                key={tech.name}
+                className="inline-block mb-2 mr-2"
+                style={{
+                  color: `#${Math.floor(Math.random()*16777215).toString(16)}`,
+                }}
+              >
+                #{tech.name}
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
+      <div className='w-full lg:w-2/3 flex flex-wrap justify-center gap-7'>
+        {displayedPills.map((pill, index) => (
+          <NavigationPill
+            key={index}
+            color={pill.color}
+            technologies={technologies.slice(index * iconsPerPill, (index + 1) * iconsPerPill)}
+            label={pill.label}
+            rotation={pill.rotation}
+          />
+        ))}
+      </div>
+    </div>
+  )
+}
+
+
+
+
 export default SectionWrapper(Tech, "tech")

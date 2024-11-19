@@ -85,14 +85,14 @@ const technologies = [
         name: "Tailwind CSS",
         icon: tailwind,
     },
-    {
-        name: "Node JS",
-        icon: nodejs,
-    },
-    {
-        name: "MongoDB",
-        icon: mongodb,
-    },
+    // {
+    //     name: "Node JS",
+    //     icon: nodejs,
+    // },
+    // {
+    //     name: "MongoDB",
+    //     icon: mongodb,
+    // },
     {
         name: "git",
         icon: git,
@@ -101,10 +101,10 @@ const technologies = [
         name: "figma",
         icon: figma,
     },
-    {
-        name: "AWS",
-        icon: aws,
-    },
+    // {
+    //     name: "AWS",
+    //     icon: aws,
+    // },
     {
         name: "C",
         icon: cLogo,
@@ -124,10 +124,12 @@ const technologies = [
     {
         name: "Bootstrap",
         icon: bootstrap,
-    },{
-        name: "Postgres",
-        icon: postgres,
-    },{
+    },
+    // {
+    //     name: "Postgres",
+    //     icon: postgres,
+    // },
+    {
         name: "Python",
         icon: python,
     },
@@ -215,45 +217,45 @@ const projects = [
         image: groupie,
         source_code_link: "https://github.com/Raymond9734/groupie-track",
     },
-    {
-        name: "Atm System",
-        description:
-            "The ATM Management System is a command-line application in C that enables users to manage their bank accounts, offering features like secure user authentication, account management and transaction history, with data stored persistently in an SQLite database.",
-        tags: [
-            {
-                name: "C",
-            },
-            {
-                name: "SQLite",
-            },
-        ],
-        image: terminalUi,
-        source_code_link: "https://github.com/Raymond9734/Atm-System",
-    },
-    {
-        name: "Wget",
-        description:
-            "wget in Go is a command-line tool that replicates the functionality of the original wget, allowing users to download files, manage download speeds, download multiple files, and mirror websites, all while supporting HTTP and HTTPS protocols.",
-        tags: [
-            {   
-                name: "Golang",
-            },
-        ],
-        image: terminalUi,
-        source_code_link: "https://github.com/Raymond9734/wget",
-    },
-    {
-        name: "Net-cat",
-        description:
-            "TCP-Chat is a recreation of the NetCat utility in Go, featuring a client-server architecture that enables multiple clients to engage in group chat. It supports TCP communication, message broadcasting with timestamps, client notifications for joining and leaving and ensuring a responsive chat experience.",
-        tags: [
-            {   
-                name: "Golang",
-            },
-        ],
-        image: terminalUi,
-        source_code_link: "https://github.com/Raymond9734/net-cat",
-    },
+    // {
+    //     name: "Atm System",
+    //     description:
+    //         "The ATM Management System is a command-line application in C that enables users to manage their bank accounts, offering features like secure user authentication, account management and transaction history, with data stored persistently in an SQLite database.",
+    //     tags: [
+    //         {
+    //             name: "C",
+    //         },
+    //         {
+    //             name: "SQLite",
+    //         },
+    //     ],
+    //     image: terminalUi,
+    //     source_code_link: "https://github.com/Raymond9734/Atm-System",
+    // },
+    // {
+    //     name: "Wget",
+    //     description:
+    //         "wget in Go is a command-line tool that replicates the functionality of the original wget, allowing users to download files, manage download speeds, download multiple files, and mirror websites, all while supporting HTTP and HTTPS protocols.",
+    //     tags: [
+    //         {   
+    //             name: "Golang",
+    //         },
+    //     ],
+    //     image: terminalUi,
+    //     source_code_link: "https://github.com/Raymond9734/wget",
+    // },
+    // {
+    //     name: "Net-cat",
+    //     description:
+    //         "TCP-Chat is a recreation of the NetCat utility in Go, featuring a client-server architecture that enables multiple clients to engage in group chat. It supports TCP communication, message broadcasting with timestamps, client notifications for joining and leaving and ensuring a responsive chat experience.",
+    //     tags: [
+    //         {   
+    //             name: "Golang",
+    //         },
+    //     ],
+    //     image: terminalUi,
+    //     source_code_link: "https://github.com/Raymond9734/net-cat",
+    // },
     
 ];
 
