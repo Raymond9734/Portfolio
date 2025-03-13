@@ -1,4 +1,3 @@
-import React from 'react'
 import { motion } from 'framer-motion'
 import { styles } from '../style'
 import { ComputersCanvas } from './canvas'
@@ -61,7 +60,7 @@ const Hero = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 2, delay: 2 }}
               >
-                {["A full stack developer ", <br key="br" className='hidden md:block' />, "and a UI/UX designer"].map((text, index) => (
+                {["A full stack  ", <br key="br" className='hidden md:block' />, "developer"].map((text, index) => (
                   <motion.span
                     key={index}
                     initial={{ opacity: 0 }}
