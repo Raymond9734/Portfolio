@@ -7,7 +7,7 @@ import { fadeIn, textVariant } from '../utils/motion';
 import { motion } from 'framer-motion';
 import { Tilt } from 'react-tilt';
 
-const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
+const ProjectCard = ({ index, name, description, tags, image, source_code_link, live_link }) => {
   const generateRandomColor = () => {
     return '#' + Math.floor(Math.random() * 16777215).toString(16);
   };
@@ -25,7 +25,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
       >
         <div className='relative w-full h-[230px]'>
           <img src={image} alt={name} className='w-full h-full object-cover rounded-2xl' />
-          <div className='absolute inset-0 flex justify-end items-end m-3 card-img_hover'>
+          <div className='absolute inset-0 flex justify-end items-end m-3 card-img_hover gap-2'>
             <div 
               onClick={() => window.open(source_code_link, "_blank")} 
               className='w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
@@ -33,6 +33,15 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
             >
               <img src={github} alt='github' className='w-1/2 h-1/2 object-contain' />
             </div>
+            {live_link && (
+              <div 
+                onClick={() => window.open(live_link, "_blank")} 
+                className='w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+                style={{ backgroundColor: styles.darkBgColor }}
+              >
+                <span className="text-white text-xs">Live</span>
+              </div>
+            )}
           </div>
         </div>
         <div className='mt-5'>
