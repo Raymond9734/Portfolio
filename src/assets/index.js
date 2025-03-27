@@ -39,6 +39,7 @@ import terminalUi from "./Projects/terminal-ui.png";
 import biasharaTrack from "./Projects/biashara-track.png";
 import healthNet from "./Projects/health-net.png";
 import kintara from "./Projects/kintara.png";
+import shop from "./Projects/shop.png";
 
 export {
   logo,
@@ -80,4 +81,6 @@ export {
   biasharaTrack,
   healthNet,
   kintara,
+  shop,
 };
+  
