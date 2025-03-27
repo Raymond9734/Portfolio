@@ -20,6 +20,8 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import ruby from "./tech/ruby.png";
+import rails from "./tech/rails.png";
 
 import zone01 from "./company/zone01Logo.png";
 import aws from "./tech/aws-logo.jpg";
@@ -82,5 +84,6 @@ export {
   healthNet,
   kintara,
   shop,
+  ruby,
+  rails,
 };
-  
