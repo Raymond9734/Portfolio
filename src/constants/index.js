@@ -31,6 +31,7 @@ import {
   biasharaTrack,
   healthNet,
   kintara,
+  shop,
 } from "../assets";
 
 export const navLinks = [
@@ -268,26 +269,50 @@ const projects = [
     source_code_link: "https://github.com/Raymond9734/Netfix",
   },
   {
-    name: "Groupie",
+    name: "Shop",
     description:
-      "Groupie Tracker is a web application that provides information about music artists, including concert dates and locations, by fetching data from a public API and presenting it through a user-friendly interface.",
+      "This is a Ruby on Rails e-commerce application that features comprehensive user authentication, product management, and shopping cart functionality, with the standout feature being integration with Mpesa payment system for processing transactions in real-time.The project demonstrates implementation of a complete e-commerce solution with secure payment processing capabilities specifically tailored for the African market. ",
     tags: [
       {
-        name: "JavaScript",
+        name: "Ruby on Rails",
       },
       {
         name: "HTML",
       },
       {
-        name: "CSS",
+        name: "SCSS",
       },
       {
-        name: "Golang",
+        name: "Mpesa",
+      },
+      {
+        name: "JavaScript",
       },
     ],
-    image: groupie,
-    source_code_link: "https://github.com/Raymond9734/groupie-track",
+    image: shop,
+    source_code_link: "https://github.com/Raymond9734/rails-shop.git",
   },
+  // {
+  //   name: "Groupie",
+  //   description:
+  //     "Groupie Tracker is a web application that provides information about music artists, including concert dates and locations, by fetching data from a public API and presenting it through a user-friendly interface.",
+  //   tags: [
+  //     {
+  //       name: "JavaScript",
+  //     },
+  //     {
+  //       name: "HTML",
+  //     },
+  //     {
+  //       name: "CSS",
+  //     },
+  //     {
+  //       name: "Golang",
+  //     },
+  //   ],
+  //   image: groupie,
+  //   source_code_link: "https://github.com/Raymond9734/groupie-track",
+  // },
 ];
 
 export { services, technologies, experiences, projects };
