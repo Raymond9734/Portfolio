@@ -95,7 +95,7 @@ const Contact = () => {
               name='message'
               value={form.message}
               onChange={handleChange}
-              placeholder="What do you want to say?"
+              placeholder="Drop me a line! I'm all ears and excited to connect..."
               className='py-4 px-6 placeholder:text-secondary rounded-lg outline-none border-none font-medium'
               style={{ backgroundColor: styles.darkBgColor, color: styles.whiteColor }}
             />
@@ -162,7 +162,7 @@ const Contact = () => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
             </svg>
             <p className="text-lg font-semibold text-white">Thank you for your message!</p>
-            <p className="text-white">I will get back to you shortly.</p>
+            <p className="text-white">I will get back to you as soon as possible.</p>
           </div>
         </div>
       )}
