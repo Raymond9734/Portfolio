@@ -32,6 +32,8 @@ import {
   healthNet,
   kintara,
   shop,
+  ruby,
+  rails,
 } from "../assets";
 
 export const navLinks = [
@@ -69,10 +71,10 @@ const technologies = [
     name: "HTML 5",
     icon: html,
   },
-  {
-    name: "CSS",
-    icon: css,
-  },
+  // {
+  //   name: "CSS",
+  //   icon: css,
+  // },
   {
     name: "JavaScript",
     icon: javascript,
@@ -144,6 +146,14 @@ const technologies = [
   {
     name: "Docker",
     icon: docker,
+  },
+  {
+    name: "Ruby",
+    icon: ruby,
+  },
+  {
+    name: "Rails",
+    icon: rails,
   },
 ];
 
