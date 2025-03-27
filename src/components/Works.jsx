@@ -141,12 +141,11 @@ const ProjectModal = ({ project, onClose }) => {
         </button>
         
         <div className="flex flex-col gap-6">
-          <div className="w-full rounded-xl overflow-hidden">
+          <div className="w-full rounded-xl overflow-hidden flex justify-center items-center" style={{ maxHeight: '500px' }}>
             <img 
               src={image} 
               alt={name} 
-              className="w-full object-cover" 
-              style={{ height: '500px' }}
+              className="w-full object-contain max-h-[500px]" 
             />
           </div>
           
