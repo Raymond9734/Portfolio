@@ -301,6 +301,7 @@ const projects = [
     ],
     image: shop,
     source_code_link: "https://github.com/Raymond9734/rails-shop.git",
+    live_link: "https://rails-shop-production.up.railway.app/",
   },
   // {
   //   name: "Groupie",
