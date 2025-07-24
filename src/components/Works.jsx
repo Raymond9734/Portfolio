@@ -186,7 +186,6 @@ const ProjectModal = ({ project, onClose }) => {
                 }}
               >
                 <img src={github} alt="GitHub" className="w-5 h-5" />
-                View Code
               </a>
               
               {live_link && (
