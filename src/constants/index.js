@@ -30,6 +30,7 @@ import {
   shop,
   ruby,
   rails,
+  Berrijam,
 } from "../assets";
 
 export const navLinks = [
@@ -168,6 +169,22 @@ const experiences = [
       "Utilizing a structured approach to project development and maintenance, ensuring seamless deployments and scalable application updates.",
     ],
   },
+  {
+    title: "Software Developer",
+    company_name: "Berrijam AI",
+    icon: Berrijam, 
+    iconBg: "#DDEEFF", 
+    date: "May 2025 – Present",
+    points: [
+      "Building AI-powered web applications that solve real-world problems across healthcare, finance, and other industries.",
+      "Designing and implementing RESTful APIs to support intelligent features, such as data-driven insights, automation, and smart workflows.",
+      "Collaborating with cross-functional teams to deliver user-centric, high-performance solutions aligned with client and business needs.",
+      "Contributing to the design and architecture of platforms that leverage AI and machine learning to enhance decision-making and operational efficiency.",
+      "Ensuring code quality through regular reviews, performance optimization, and adherence to industry best practices.",
+      "Maintaining a strong focus on usability, accessibility, and clean design across all product interfaces."
+    ],
+  }
+  
 ];
 
 const projects = [
@@ -272,7 +289,7 @@ const projects = [
       },
     ],
     image: netfix,
-    source_code_link: "https://github.com/Raymond9734/Netfix",
+    source_code_link: "https://github.com/Raymond9734/",
   },
   {
     name: "Shop",
@@ -296,8 +313,7 @@ const projects = [
       },
     ],
     image: shop,
-    source_code_link: "https://github.com/Raymond9734/rails-shop.git",
-    live_link: "https://rails-shop-production.up.railway.app/",
+    source_code_link: "https://github.com/Raymond9734/",
   },
   // {
   //   name: "Groupie",

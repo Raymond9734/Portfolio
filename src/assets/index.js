@@ -24,6 +24,8 @@ import ruby from "./tech/ruby.png";
 import rails from "./tech/rails.png";
 
 import zone01 from "./company/zone01Logo.png";
+import Berrijam from "./company/BerrijamLogo.png"
+
 import aws from "./tech/aws-logo.jpg";
 import django from "./tech/django-basics.png";
 import python from "./tech/Python-logo.png";
@@ -44,6 +46,7 @@ import kintara from "./Projects/kintara.png";
 import shop from "./Projects/shop.png";
 
 export {
+  Berrijam,
   logo,
   backend,
   creator,
